@@ -17,6 +17,16 @@ objectives:
       - criteria:
           - "<=800"
     weight: 1
+  - sli: "calls_to_db_count"
+    key_sli: false
+    pass:
+      - criteria:
+        - "<=+10%"
+    warning:
+      - criteria:
+          - "<=+15%"
+    weight: 1
 total_score:
   pass: "90%"
   warning: "75%"
+
